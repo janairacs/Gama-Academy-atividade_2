@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Airbnb aluguel por temporada acomodações experiências e lugares. </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72"></script>
+    <link rel="stylesheet" href="estilo.CSS">
+    <link rel="SHORTCUT ICON"   href="imagem/icone.png">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img id="imgLoja" src="imagem/logo.png">
+                </a>
+
+
+            </div>
+            <div id="div-row-search" class="row">
+                <div class="nav">
+                    <div class="nav-body">
+                        <form id="form-search" onsubmit="event.preventDefault()" novalidate>
+                            <div class="form-row">
+                                <div class="col-md-4 mb-2">
+                                    <label for="location-search">Localização</label>
+                                    <input type="text" class="form-control" id="location-search"
+                                        placeholder="Para onde você vai?" required>
+                                    <div class="invalid-feedback">
+                                        Selecione uma localização
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-2">
+                                    <label for="checkin">Check-in/Checkout</label>
+                                    <input type="date" class="form-control" id="checkin" required>
+                                    <div class="invalid-feedback date-fields">
+                                        Selecione uma data de checkin e Checkout
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-2">
+                                    <label for="location-search">Hóspedes</label>
+                                    <input type="text" class="form-control" id="location-search"
+                                        placeholder="Insira o numero de hóspedes" required>
+                                    <div class="invalid-feedback">
+                                        Insira o numero de hóspedes
+                                    </div>
+                                </div>
+
+                                <div class="col div-btn-search">
+                                    <button type="submit" onclick="handleClickSearch()"
+                                        class="btn btn-outline-success"><i class="fas fa-search"></i>
+                                        Buscar</button>
+                                </div>
+                            </div>
+
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="Titulo">
+        <h1> Podemos estar afastados, mas vamos superar isso juntos.
+            </br>
+            Segue as melhores opções de hospedagem para você</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-7">
+                <div id="cards"></div>
+                <script src="./Index.js"></script>
+            </div>
+        </div>
+     
+    </div>
+</body>
+
+<footer>
+    <div id="rodape">
+        <h5>** Atenção Este site e apenas para aprendizagem. Não esta vinculado ao Airbnb**</h5>
+    </div>
+</footer>
+
+</html>

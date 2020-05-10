@@ -1,0 +1,20 @@
+#Titulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 95px;
+
+    }
+
+#rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:40px;
+    }
